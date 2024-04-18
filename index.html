@@ -15,6 +15,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap -->
   </head>
   <body>
     <!-- Navbar Start -->
@@ -22,17 +24,17 @@
     <nav class="navbar">
       <a href="#" class="navbar-logo"> Rasa <span>Dewata</span></a>
 
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Restaurant</a>
+        <a href="login.html">Sign In</a>
+      </div>
+
       <!-- Search bar container -->
       <div class="search-container">
         <!-- Search input -->
         <input type="search" id="site-search" name="q" aria-label="Search through site content" placeholder="Search..." />
-      </div>
-
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#menu">Recommendation</a>
-        <a href="login.html">Login</a>
       </div>
 
       <div class="navbar-extra">
@@ -48,6 +50,103 @@
       </main>
     </section>
     <!-- Tampilan Utama End-->
+
+    <!-- Fitur section start -->
+    <section class="fitur">
+      <h2>Why <span>we are the best</span></h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="fitur-item">
+              <img src="img/fast.png" alt="Checkmark Icon" class="fitur-icon" />
+              <h3>Fast and Easy</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper risus ut magna aliquam, eu semper magna semper.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fitur-item">
+              <img src="img/accurate.png" alt="Clock Icon" class="fitur-icon" />
+              <h3>Accurate</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper risus ut magna aliquam, eu semper magna semper.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fitur-item">
+              <img src="img/informative.png" alt="Checkmark Icon" class="fitur-icon" />
+              <h3>Informative</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper risus ut magna aliquam, eu semper magna semper.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fitur section end -->
+
+    <!-- foodAndDrinks section start -->
+    <section id="food" class="food">
+      <h2>Special <span>Food and Drink</span></h2>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/food1.png" alt="Kopi-Gayo" class="menu-card-image" />
+        </div>
+        <div class="menu-card">
+          <img src="img/food2.png" alt="Kopi-Bali" class="menu-card-image" />
+        </div>
+        <div class="menu-card">
+          <img src="img/food3.png" alt="Kopi-Lintong" class="menu-card-image" />
+        </div>
+        <div class="menu-card">
+          <img src="img/food4.png" alt="Kopi-Papua" class="menu-card-image" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/drink1.png" alt="Kopi-Gayo" class="menu-card-image" />
+        </div>
+        <div class="menu-card">
+          <img src="img/drink2.png" alt="Kopi-Bali" class="menu-card-image" />
+        </div>
+        <div class="menu-card">
+          <img src="img/drink3.png" alt="Kopi-Lintong" class="menu-card-image" />
+        </div>
+        <div class="menu-card">
+          <img src="img/drink4.png" alt="Kopi-Papua" class="menu-card-image" />
+        </div>
+      </div>
+    </section>
+    <!-- foodAndDrinks section end -->
+
+    <!-- explore section start -->
+    <section id="menu" class="menu">
+      <h2>Restaurant <span>Gallery</span></h2>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/res1.jpg" alt="Kopi-Gayo" class="menu-card-image" />
+          <h3 class="menu-card-title">The Monkey Sanur</h3>
+          <img src="img/5star.png" alt="" class="menu-card-star" />
+          <p class="menu-card-ket">Badung Regency, Bali</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/res2.jpg" alt="Kopi-Bali" class="menu-card-image" />
+          <h3 class="menu-card-title">Kubu at Pandapa</h3>
+          <img src="img/5star.png" alt="" class="menu-card-star" />
+          <p class="menu-card-ket">Jl. Raya Tegallalang Alas Harum, Ubud</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/res3.jpg" alt="Kopi-Lintong" class="menu-card-image" />
+          <h3 class="menu-card-title">Kayuputi</h3>
+          <img src="img/5star.png" alt="" class="menu-card-star" />
+          <p class="menu-card-ket">Jl. Abimanyu (Dhyana Pura) Rooftop</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/res4.jpg" alt="Kopi-Papua" class="menu-card-image" />
+          <h3 class="menu-card-title">Tiga Canggu</h3>
+          <img src="img/5star.png" alt="" class="menu-card-star" />
+          <p class="menu-card-ket">Jl. Bisma Ubud, Bali</p>
+        </div>
+      </div>
+    </section>
+    <!-- explore section end -->
 
     <!-- About section start -->
     <section id="about" class="about">
@@ -73,111 +172,47 @@
     </section>
     <!-- About section end -->
 
-    <!-- explore section start -->
-    <section id="menu" class="menu">
-      <h2>Restaurant <span>Recommendation</span></h2>
-      <div class="row">
-        <div class="menu-card">
-          <img src="img/res1.jpg" alt="Kopi-Gayo" class="menu-card-image" />
-          <h3 class="menu-card-title">- Kopi Gayo</h3>
-          <p class="menu-card-ket">Kopi Gayo berasal dari daerah Aceh, tepatnya di Gayo Lues, dan dikenal dengan rasa yang kuat, asam yang rendah, serta aroma herbal dan rempah-rempah.</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/res2.jpg" alt="Kopi-Bali" class="menu-card-image" />
-          <h3 class="menu-card-title">- Kopi Bali</h3>
-          <p class="menu-card-ket">Kopi Bali tumbuh di pulau Bali dan biasanya memiliki rasa yang halus, asam yang rendah, serta aroma yang lebih ringan daripada beberapa jenis kopi lainnya.</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/res3.jpg" alt="Kopi-Lintong" class="menu-card-image" />
-          <h3 class="menu-card-title">- Kopi Kopi-Lintong</h3>
-          <p class="menu-card-ket">Kopi Lintong berasal dari Sumatra Utara dan memiliki rasa yang kuat dengan asam yang rendah, serta aroma yang unik.</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/res4.jpg" alt="Kopi-Papua" class="menu-card-image" />
-          <h3 class="menu-card-title">- Kopi Papua</h3>
-          <p class="menu-card-ket">Kopi Papua ditanam di daerah Papua dan sering memiliki rasa yang kuat, asam yang seimbang, serta karakteristik rasa yang beragam tergantung pada lokasi pertumbuhan.</p>
-        </div>
-      </div>
-      <div class="row"><button type="button">Readmore</button></div>
-    </section>
-    <!-- explore section end -->
-
-    <!-- contact section start -->
-    <section id="contact" class="contact">
-      <h2>Kontak Kami</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, animi.</p>
-    </section>
-    <!-- contact section end -->
-
     <!-- Footer -->
-    <footer class="mainfooter" role="contentinfo">
-      <div class="footer-middle">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <!--Column1-->
-              <div class="footer-pad">
-                <h4>Address</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#"></a></li>
-                  <li><a href="#">Store & Office</a></li>
-                  <li><a href="#">JL.Setrasari Kulon III, NO. 10-12</a></li>
-                  <li><a href="#">Sukarasa,Sukasari,Bandung.</a></li>
-                  <li><a href="#">Jawa Barat</a></li>
-                  <li><a href="#">Indonesia 40152</a></li>
-                </ul>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-info">
+              <img src="img/RasaDewata.png" alt="Company Logo" class="logo" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-contact">
+              <h4>Get in touch</h4>
+              <p>JL. Setrasari Kulon III, No. 10-12, Sukarasa, Sukasari, Bandung. Jawa Barat, Indonesia 40152</p>
+              <div class="footer-phone">
+                <p>Phone: (022) 2027-7564</p>
+                <p>Customer Service: 0811-235-9988</p>
+              </div>
+              <div class="footer-email">
+                <p>Email: info@rasadewata.com</p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <!--Column1-->
-              <div class="footer-pad">
-                <h4>Get in touch</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#">Phone = 022-2027564</a></li>
-                  <li><a href="#">Service Center = 0811-233-8899</a></li>
-                  <li><a href="#">Customer Service = 0811-255-9988</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <!--Column1-->
-              <div class="footer-pad">
-                <h4>Work With Us</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#">Authors</a></li>
-                  <li><a href="#">Advertise</a></li>
-                  <li><a href="#">API</a></li>
-
-                  <li>
-                    <a href="#"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h4>Follow Us</h4>
-              <ul class="social-network social-circle">
-                <li>
-                  <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
-                </li>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-links">
+              <h4>Work With Us</h4>
+              <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Become a Partner</a></li>
+              </ul>
+              <h4>Links</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
               </ul>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12 copy">
-              <p class="text-center">&copy; Copyright 2024 - Rasa Dewata. All rights reserved.</p>
-            </div>
-          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright 2024 Rasa Dewata. All Rights Reserved.</p>
       </div>
     </footer>
     <!-- Footer End -->
